@@ -2,3 +2,9 @@
 
 This branch (master) will serve as a basic clone-able Spring Boot project. This code was generated using the Spring 
 Boot Initializr ([start.spring.io](https://start.spring.io/)).
+
+Clone this repo and import as a Gradle or Spring Boot project in Eclipse/IntelliJ.
+
+Requirements:
+- Java 8
+- Gradle (like 5.2+ probably)
