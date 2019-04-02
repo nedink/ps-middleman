@@ -12,7 +12,7 @@ Requirements:
 Feel free to make a new branch for yourself and use it to create your own solution:
 
 ```bash
-ck -b david
+git checkout -b david
 git add --all
 git commit -m "initialize branch 'david'"
 git push -u origin david
