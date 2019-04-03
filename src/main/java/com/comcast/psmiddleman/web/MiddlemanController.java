@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+
 import java.util.List;
 
 @RestController
@@ -23,7 +24,8 @@ public class MiddlemanController {
     }
 
     @GetMapping("/closest-to/{price}")
-    public List<ProductNamePrice> getClosest(@PathVariable Double price) {
+    public List<ProductNamePrice> getClosestTo(@PathVariable Double price) {
         return middlemanService.getClosestTo(price);
+
     }
 }
