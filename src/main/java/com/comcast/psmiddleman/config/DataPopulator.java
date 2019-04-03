@@ -1,5 +1,7 @@
-package com.comcast.psmiddleman;
+package com.comcast.psmiddleman.config;
 
+import com.comcast.psmiddleman.repository.MyEntityRepository;
+import com.comcast.psmiddleman.domain.MyEntity;
 import lombok.AllArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;

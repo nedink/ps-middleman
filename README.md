@@ -17,3 +17,15 @@ git add --all
 git commit -m "initialize branch 'david'"
 git push -u origin david
 ```
+
+## API
+
+Forward all products (name and price)
+```bash
+GET /products
+```
+
+Forward closest 3 products to some price (price as double, returns name and price)
+```bash
+GET /products/closest-to/{price}
+```
