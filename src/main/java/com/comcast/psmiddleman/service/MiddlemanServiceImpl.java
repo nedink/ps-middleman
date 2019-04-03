@@ -4,19 +4,24 @@ import com.comcast.psmiddleman.dto.Product;
 import com.comcast.psmiddleman.dto.ProductNamePrice;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-@AllArgsConstructor
+@Service
 public class MiddlemanServiceImpl implements MiddlemanService {
 
     private final RestTemplate restTemplate;
 
     @Value("${PRODUCT_SERVICE_URL:}") // pull in from application.properties (or cloud environment variable if set)
-    private final String PRODUCT_SERVICE_URL;
+    private String PRODUCT_SERVICE_URL;
+
+    public MiddlemanServiceImpl(RestTemplate restTemplate) {
+        this.restTemplate = restTemplate;
+    }
 
     @Override
     public List<ProductNamePrice> getAll() {
