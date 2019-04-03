@@ -2,7 +2,6 @@ package com.comcast.psmiddleman.service;
 
 import com.comcast.psmiddleman.dto.Product;
 import com.comcast.psmiddleman.dto.ProductNamePrice;
-import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
