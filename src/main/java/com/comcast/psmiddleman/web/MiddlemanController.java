@@ -25,6 +25,5 @@ public class MiddlemanController {
     @GetMapping("/closest-to/{price}")
     public List<ProductNamePrice> getClosestTo(@PathVariable Double price) {
         return middlemanService.getClosestTo(price);
-
     }
 }

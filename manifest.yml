@@ -1,0 +1,6 @@
+applications:
+  - name: ps-middleman
+    random-route: true
+    path: build/libs/ps-middleman-1.0.0.jar
+    env:
+      PRODUCT_SERVICE_URL: https://ps-terrific-echidna.apps.apbg.apcf.io
